@@ -8,9 +8,9 @@ def print_anime():
   for i,j in empty_dictionary.items():
     print(f"code = {i}  title = {j}")
 
-def search_anime(key):
+def search_anime(ij):
     print("Searching anime in dictionary")
-    print(f"result shows{empty_dictionary[key]}")
+    print(f"result shows{empty_dictionary[ij]}")
   
 
 while t == True:
@@ -33,7 +33,9 @@ while t == True:
     print_anime()
     continue
   elif choice == "s":
-    search_anime(keys)
+    search_anime(ij)
+    search = input(f"put the key")
+    print search_anime()
     continue
    
   
